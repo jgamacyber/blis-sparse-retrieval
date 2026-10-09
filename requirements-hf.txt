@@ -1,0 +1,14 @@
+# Backend `hf`: os modelos dos artigos.
+#
+#   pip install -r requirements-hf.txt
+#   BACKEND=hf python main.py avaliar
+#
+# Isto baixa alguns gigabytes de pesos. Em CPU funciona e é lento; a primeira
+# execução gasta a maior parte do tempo no download.
+
+torch>=2.2.0
+transformers>=4.40.0
+
+# FlagEmbedding serve o BGE-M3 e o bge-reranker-v2-m3 com a interface que os
+# tutoriais da BAAI usam (BGEM3FlagModel e FlagReranker).
+FlagEmbedding>=1.2.10

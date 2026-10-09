@@ -1,0 +1,5 @@
+# Backend `local`: nenhuma dependência além da biblioteca padrão.
+# BM25, índice invertido, SPLADE, as três funções do BGE-M3, fusão, métricas e
+# os dois conjuntos de teste rodam sem instalar nada.
+#
+# Para os modelos de verdade, veja requirements-hf.txt.

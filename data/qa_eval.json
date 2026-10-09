@@ -1,0 +1,179 @@
+[
+  {
+    "id": "q01",
+    "consulta": "qual é o regularizador FLOPS e como ele é definido",
+    "relevantes": ["splade#O regularizador FLOPS"],
+    "tipo": "exato",
+    "nota": "termo raro e literal, presente só no documento do SPLADE"
+  },
+  {
+    "id": "q02",
+    "consulta": "o que mudou do SPLADE v1 para o v2 no pooling",
+    "relevantes": ["splade#A mudança do v2: max em vez de soma"],
+    "tipo": "exato",
+    "nota": "soma trocada por máximo"
+  },
+  {
+    "id": "q03",
+    "consulta": "o que é MaxSim",
+    "relevantes": ["colbert#A interação tardia"],
+    "tipo": "exato",
+    "nota": "nome próprio da operação, no ColBERT"
+  },
+  {
+    "id": "q04",
+    "consulta": "qual valor de k a fusão recíproca de postos usa no artigo original",
+    "relevantes": ["rrf#A fórmula"],
+    "tipo": "exato",
+    "nota": "k = 60"
+  },
+  {
+    "id": "q05",
+    "consulta": "o que a perda InfoNCE faz na autodestilação do M3",
+    "relevantes": ["bge-m3#Autodestilação"],
+    "tipo": "exato",
+    "nota": "nome da perda contrastiva"
+  },
+  {
+    "id": "q06",
+    "consulta": "o que o normalize=True faz no bge-reranker-v2-m3",
+    "relevantes": ["reranker#O bge-reranker-v2-m3"],
+    "tipo": "exato",
+    "nota": "sigmoide sobre o logit"
+  },
+  {
+    "id": "q07",
+    "consulta": "o que é docT5query",
+    "relevantes": ["doc2query", "doc2query#A ideia"],
+    "tipo": "exato",
+    "nota": "o nome aparece na abertura do documento"
+  },
+  {
+    "id": "q08",
+    "consulta": "negativos dentro do lote no treino do DPR",
+    "relevantes": ["dpr#O treino com negativos no lote"],
+    "tipo": "exato",
+    "nota": "in-batch negatives"
+  },
+  {
+    "id": "q09",
+    "consulta": "qual foi o Recall@5 do híbrido com reordenação no benchmark de tabelas",
+    "relevantes": ["benchmark-tabelas#O que realmente deu ganho"],
+    "tipo": "exato",
+    "nota": "0,816"
+  },
+  {
+    "id": "q10",
+    "consulta": "o que significam os parâmetros k1 e b do BM25",
+    "relevantes": ["bm25#A fórmula"],
+    "tipo": "exato",
+    "nota": "saturação de frequência e normalização por tamanho"
+  },
+  {
+    "id": "q11",
+    "consulta": "o que é uma lista de postagem em um índice invertido",
+    "relevantes": ["indice-invertido#A estrutura"],
+    "tipo": "exato",
+    "nota": "estrutura do índice"
+  },
+  {
+    "id": "q12",
+    "consulta": "o que o BEIR mede em regime de tiro zero",
+    "relevantes": ["beir#Por que ele existe"],
+    "tipo": "exato",
+    "nota": "avaliação fora do domínio de treino"
+  },
+  {
+    "id": "q13",
+    "consulta": "por que a busca por palavra-chave não encontra o texto quando o autor escreveu de outro jeito",
+    "relevantes": ["mismatch-vocabulario#O problema", "bm25#O defeito"],
+    "tipo": "parafrase",
+    "nota": "descreve a incompatibilidade de vocabulário sem usar o nome dela"
+  },
+  {
+    "id": "q14",
+    "consulta": "tem como o sistema achar o documento certo mesmo quando a pessoa pergunta com palavras diferentes das que estão escritas lá",
+    "relevantes": [
+      "mismatch-vocabulario#Os dois caminhos modernos",
+      "splade#Por que isso importa para quem vem do BM25"
+    ],
+    "tipo": "parafrase",
+    "nota": "pergunta de usuário sobre expansão, em linguagem comum"
+  },
+  {
+    "id": "q15",
+    "consulta": "por que colocar o modelo pesado só no final do funil e não para varrer tudo",
+    "relevantes": [
+      "reranker#A diferença de arquitetura",
+      "reranker#Por que o reordenador costuma dar o maior ganho"
+    ],
+    "tipo": "parafrase",
+    "nota": "descreve a arquitetura de dois estágios sem citar codificador cruzado"
+  },
+  {
+    "id": "q16",
+    "consulta": "quantos documentos devo mandar para a segunda etapa do meu pipeline",
+    "relevantes": [
+      "reranker#O tamanho do conjunto de candidatos",
+      "benchmark-tabelas#O tamanho do conjunto de candidatos domina o reordenador"
+    ],
+    "tipo": "parafrase",
+    "nota": "tamanho do conjunto de candidatos, dito como dúvida prática"
+  },
+  {
+    "id": "q17",
+    "consulta": "por que não dá para simplesmente somar as notas de dois buscadores diferentes",
+    "relevantes": ["rrf#O problema"],
+    "tipo": "parafrase",
+    "nota": "escalas incomparáveis, sem usar a palavra fusão"
+  },
+  {
+    "id": "q18",
+    "consulta": "guardar um ponto por palavra em vez de um ponto por parágrafo sai caro",
+    "relevantes": ["colbert#O custo"],
+    "tipo": "parafrase",
+    "nota": "custo de armazenamento da representação multivetor"
+  },
+  {
+    "id": "q19",
+    "consulta": "meu modelo foi muito bem no teste e foi mal quando troquei de base de documentos",
+    "relevantes": ["beir#O achado incômodo", "dpr#O resultado e o que veio depois"],
+    "tipo": "parafrase",
+    "nota": "generalização fora do domínio, descrita como sintoma"
+  },
+  {
+    "id": "q20",
+    "consulta": "quero melhorar a busca sem mexer no buscador, só no que está guardado",
+    "relevantes": ["doc2query#A ideia", "doc2query#Por que funciona"],
+    "tipo": "parafrase",
+    "nota": "expansão no lado do documento, dita pelo objetivo"
+  },
+  {
+    "id": "q21",
+    "consulta": "uma palavra presente em quase tudo deixa a pesquisa devagar",
+    "relevantes": ["indice-invertido#O termo que estraga tudo"],
+    "tipo": "parafrase",
+    "nota": "o caso que o regularizador ataca, dito pelo efeito"
+  },
+  {
+    "id": "q22",
+    "consulta": "estou escolhendo entre medir acerto no topo ou não perder nada na primeira etapa",
+    "relevantes": ["avaliacao-recuperacao#A escolha depende do estágio"],
+    "tipo": "parafrase",
+    "nota": "MRR contra Recall por estágio, dito como dilema"
+  },
+  {
+    "id": "q23",
+    "consulta": "a média do meu experimento melhorou mas desconfio que piorou para parte das perguntas",
+    "relevantes": ["avaliacao-recuperacao#O risco de medir só o agregado"],
+    "tipo": "parafrase",
+    "nota": "risco de medir só o agregado"
+  },
+  {
+    "id": "q24",
+    "consulta": "um modelo só que já devolve as três formas de comparar texto",
+    "relevantes": ["bge-m3#Os três M", "bge-m3#O que isso muda na prática"],
+    "tipo": "parafrase",
+    "nota": "multifuncionalidade, sem citar denso, léxico ou multivetor"
+  }
+]
