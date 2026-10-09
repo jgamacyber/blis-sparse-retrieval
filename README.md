@@ -1,4 +1,4 @@
-# BLIS Sparse Retrieval — do BM25 à esparsidade aprendida
+# BLIS Sparse Retrieval --> do BM25 à esparsidade aprendida
 
 Módulo bônus da trilha de RAG do BLIS. A pergunta que organiza o repositório é a que todo mundo faz ao ver SPLADE e BGE-M3 pela primeira vez: **vale a pena substituir o BM25?**
 
